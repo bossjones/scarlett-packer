@@ -1,0 +1,8 @@
+{
+  "compression_level": "0",
+  "disk_size": "20000",
+  "cpus": "2",
+  "headless": "1",
+  "memory": "4096",
+  "ssh_timeout": "20m"
+}

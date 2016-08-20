@@ -88,6 +88,8 @@
       "scripts/ubuntu-16.04/vmware.sh",
       "scripts/common/vagrant.sh",
       "scripts/common/sshd.sh",
+      "scripts/ubuntu/deps.sh",
+      "scripts/ubuntu/desktop-bootstrap.sh",
       "scripts/ubuntu/cleanup.sh",
       "scripts/common/minimize.sh"
     ]

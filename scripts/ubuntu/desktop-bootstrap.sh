@@ -1932,4 +1932,4 @@ EOF
 # wget -qO /etc/init/firstboot-custom.conf "http://example.com/firstboot-custom.conf"
 
 # Installationsdatum speichern
-sudo date +%c > /root/install-date
+date +%c > /home/pi/install-date

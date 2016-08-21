@@ -8,7 +8,7 @@ Vagrant.configure('2') do |config|
 
       c.vm.provider :virtualbox do |v|
         v.name = name
-        v.gui = false
+        v.gui = true
       end
 
       c.vm.provider :vmware_fusion do |v|

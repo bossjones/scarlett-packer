@@ -1882,15 +1882,15 @@ lspci | grep VGA | grep -q ATI && sudo apt-get install -y fglrx-updates
 # locale-gen
 
 # update apt-file db
-sudo apt-file update
+# sudo apt-file update
 
-# Disable update-notifier notifications:
-sudo sed -i /etc/update-notifier/hooks_seen -e '/apt-file-update/d'
-sudo sed -i /etc/update-notifier/hooks_seen -e '/nautilus-compare-notification/d'
-
-date_s=`date +%s`
-echo "apt-file-update $date_s 0" >> /etc/update-notifier/hooks_seen
-echo "nautilus-compare-notification $date_s 0" >> /etc/update-notifier/hooks_seen
+# # Disable update-notifier notifications:
+# sudo sed -i /etc/update-notifier/hooks_seen -e '/apt-file-update/d'
+# sudo sed -i /etc/update-notifier/hooks_seen -e '/nautilus-compare-notification/d'
+#
+# date_s=`date +%s`
+# echo "apt-file-update $date_s 0" >> /etc/update-notifier/hooks_seen
+# echo "nautilus-compare-notification $date_s 0" >> /etc/update-notifier/hooks_seen
 
 ###### Custom ENVIRONMENT ######
 ################################

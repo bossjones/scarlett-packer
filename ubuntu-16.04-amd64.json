@@ -7,7 +7,7 @@
     "iso_checksum_type": "{{user `iso_checksum_type`}}",
     "output_directory": "output-ubuntu-16.04-amd64-{{build_type}}",
     "vm_name": "packer-ubuntu-16.04-amd64",
-    "disk_size": "{{user `disk_size`}}",
+    "disk_size": "40000",
     "headless": "{{user `headless`}}",
     "http_directory": "http",
     "boot_wait": "5s",
@@ -36,8 +36,8 @@
     "ssh_password": "raspberry",
     "shutdown_command": "sudo systemctl poweroff",
     "vboxmanage": [
-      ["modifyvm", "{{.Name}}", "--memory", "{{user `memory`}}"],
-      ["modifyvm", "{{.Name}}", "--cpus", "{{user `cpus`}}"]
+      ["modifyvm", "{{.Name}}", "--memory", "4096"],
+      ["modifyvm", "{{.Name}}", "--cpus", "2"]
     ]
   }, {
     "type": "vmware-iso",
@@ -47,7 +47,7 @@
     "iso_checksum_type": "{{user `iso_checksum_type`}}",
     "output_directory": "output-ubuntu-16.04-amd64-{{build_type}}",
     "vm_name": "packer-ubuntu-16.04-amd64",
-    "disk_size": "{{user `disk_size`}}",
+    "disk_size": "40000",
     "headless": "{{user `headless`}}",
     "http_directory": "http",
     "boot_wait": "5s",
@@ -76,8 +76,8 @@
     "ssh_password": "raspberry",
     "shutdown_command": "sudo systemctl poweroff",
     "vmx_data": {
-      "memsize": "{{user `memory`}}",
-      "numvcpus": "{{user `cpus`}}"
+      "memsize": "4096",
+      "numvcpus": "2"
     }
   }],
   "provisioners": [{
@@ -106,7 +106,7 @@
     "headless": "false",
     "iso_checksum": "b8b172cbdf04f5ff8adc8c2c1b4007ccf66f00fc6a324a6da6eba67de71746f6",
     "iso_checksum_type": "sha256",
-    "memory": "512",
+    "memory": "4096",
     "mirror": "http://releases.ubuntu.com",
     "ssh_timeout": "60m"
   }
